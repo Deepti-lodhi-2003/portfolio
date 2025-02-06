@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <header>
+       <h1><span>D</span>eepti</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">My Work</a>
+            <a href="">Resume</a>
+            <i class="ri-menu-3-fill"></i>
+        </nav>
+        <button>Contact</button>
+
+        <div class="menu">
+            <i class="ri-close-fill"></i>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">My Work</a>
+            <a href="">Contact</a>
+
+        </div>
+    </header>
+
+<script>
+    const open = document.querySelector('nav i');
+const menu = document.querySelector('.menu');
+const close = document.querySelector('.menu i');
+
+open.addEventListener('click',() =>{
+    menu.style.display = 'grid'
+   
+})
+close.addEventListener('click', () => {
+    menu.style.display = 'none'
+})
+</script>
+</body>
+</html>
